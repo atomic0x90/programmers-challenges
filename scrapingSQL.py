@@ -37,7 +37,7 @@ readme = open('./MySQL/lv'+str(lv)+'/'+mkdirStr+'/README.md','w')
 readme.write('# '+titleText.encode('utf-8')+'\n\n---\n\n')
 readme.write('## 문제 설명\n\n\n\n---\n\n')
 readme.write('## 예시\n\n\n\n---\n\n')
-readme.write('## 추가 사항\n\n\n---\n\n')
+readme.write('## 추가 사항\n\n\n\n---\n\n')
 readme.write(str(url))
 
 readme.close()
