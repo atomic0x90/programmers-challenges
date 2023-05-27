@@ -8,6 +8,7 @@ url = raw_input('Enter a link: ')
 #print(url)
 lv = raw_input('Enter a level: ')
 #print(lv)
+what = raw_input('Enter type of question: ')
 
 page = requests.get(url)
 soup = bs(page.text, "html.parser")
@@ -22,7 +23,7 @@ titleText = title[2].text
 #print(problem[0].text)
 #print(limit[0].text)
 
-mkdirStr = title[2].text+'('+url[58:]+')'
+mkdirStr = title[2].text+'('+str(what)+', '+url[58:]+')'
 
 #print(mkdirStr)
 
