@@ -31,7 +31,7 @@ sh.mkdir('./MySQL/lv'+str(lv)+'/'+mkdirStr)
 
 sh.touch('./MySQL/lv'+str(lv)+'/'+mkdirStr+'/README.md')
 
-sh.touch('./MySQL/lv'+str(lv)+'/'+mkdirStr+'/'+url[58:]+'.cpp')
+sh.touch('./MySQL/lv'+str(lv)+'/'+mkdirStr+'/'+url[58:]+'.sql')
 
 readme = open('./MySQL/lv'+str(lv)+'/'+mkdirStr+'/README.md','w')
 
