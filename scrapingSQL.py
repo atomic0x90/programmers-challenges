@@ -18,12 +18,17 @@ problem = soup.find_all('h6')
 limit = soup.find_all('h5')
 
 titleText = title[2].text
+
+# Replace '/' with ' ' in titleText
+modifiedTitle = ''.join([' ' if c == '/' else c for c in titleText])
+
 #print(title[2].text)
 #print(titleText)
 #print(problem[0].text)
 #print(limit[0].text)
 
-mkdirStr = title[2].text+'('+str(what)+', '+url[58:]+')'
+mkdirStr = modifiedTitle+'('+str(what)+', '+url[58:]+')'
+#mkdirStr = title[2].text+'('+str(what)+', '+url[58:]+')'
 
 #print(mkdirStr)
 
