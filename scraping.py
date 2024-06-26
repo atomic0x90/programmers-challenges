@@ -22,7 +22,9 @@ titleText = title[2].text
 #print(problem[0].text)
 #print(limit[0].text)
 
-mkdirStr = title[2].text+'('+url[58:]+')'
+# Replace '/' with '_'
+sanitized_title = titleText.replace('/', '_')
+mkdirStr = sanitized_title+'('+url[58:]+')'
 
 #print(mkdirStr)
 
